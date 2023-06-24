@@ -39,6 +39,71 @@ var age = 23;
 var country = "Mexico";
 var salary = 1200;
 
-console.log(`
-    ${name}, ${email}, ${salary * 12}
-`);
+// name = prompt("Enter your name: ");
+// email = prompt("Enter your email: ");
+// pass = prompt("Enter your password: ");
+// age = prompt("Enter your age: ");
+// country = prompt("Enter your conuntry");
+// salary = prompt("Enter your salary(monthly)");
+
+// var date = new Date();
+// var currentYear = date.getFullYear();
+// var youryear = prompt("Enter your year born");
+
+// console.log(currentYear - youryear);
+
+// console.log(currentYear);
+// console.log(date);
+
+// console.log(`
+//     ${name}, ${email}, ${salary * 12}
+// `);
+
+// document.write(`<p>Welcome ${name}   ${date} </p>`)
+
+var userBirthdayYear = parseInt(prompt("Enter your birth year"));
+
+function getUserAge() {
+    var userBirthdayYear = prompt("enter your birth year");
+    var todayDate = new Date();
+    var currentYear = todayDate.getFullYear();
+    var age = currentYear - userBirthdayYear;
+    document.write(`User age is: ${age}`);
+
+    errorMsg(
+        "Unspeified",
+        "We are not considering the birth month"
+    );
+    return age;
+}
+
+function sum() {
+    var num1 = prompt("Add number ");
+    var num2 = prompt("Add number ");
+    var res =(parseInt(num1) + parseInt(num2));
+    document.write(`Result ${res}`);
+
+    errorMsg(
+        "Math error",
+        "The prompt values were not numbers"
+    );
+    
+    return res;
+}
+
+function errorMsg(type, msg) {
+    document.write(msg);
+    document.write("<p>You have an error of the type: " + type +"</p>")
+}
+
+errorMsg(
+    "Invalid credentials",
+    "Please review your password and try again"
+);
+
+
+errorMsg(
+    "Server error",
+    "Please try again later, we are technical errors"
+);
+
