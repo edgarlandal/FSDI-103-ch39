@@ -1,0 +1,86 @@
+*{
+    font-family: 'Belanosima', sans-serif;
+}
+
+body{
+    background-color: midnightblue;
+}
+
+h1{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+}
+
+.container, .container-list, .element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 20px;
+}
+
+.entryData{
+    border-radius: 10px;
+    width: 350px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.btnSubmit{
+    border-radius: 10px;
+    width: 200px;
+    font-size: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.container-list{
+    width: 1000px;
+    height: 100%;
+    background-color:mediumslateblue;
+    border-radius: 10px;
+    border: solid 4px darkgray;
+}
+
+.element{
+    font-size: 30px;
+    padding: 25px;
+}
+
+.element div{
+    border: solid 5px rebeccapurple;
+    width: 700px;
+    padding: 10px;
+}
+
+.header-task{
+    border-radius: 10px 10px 0px  0px;
+    background-color: indigo;
+    color: white;
+}
+
+.body-task{
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+}
+
+@media screen and (max-width: 738px) {
+    .container-list{
+        width: 350px;
+        height: 100%;
+        background-color:mediumslateblue;
+        border-radius: 10px;
+        border: solid 4px darkgray;
+    }
+        
+    .element div{
+        border: solid 5px rebeccapurple;
+        width: 250px;
+    }
+}
